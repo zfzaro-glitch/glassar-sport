@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glasar Sport | جلاسر سبورت</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-bg: #0a0e14;
+            --accent-cyan: #0dc75e;
+            --whatsapp-green: #25D366;
+            --insta-pink: #E1306C;
+            --facebook-blue: #1877F2; /* Added Facebook Color */
+            --tiktok-black: #000000;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--primary-bg);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: radial-gradient(circle at top right, #1a2a3a, #0a0e14);
+        }
+
+        .card {
+            width: 90%;
+            max-width: 400px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 40px;
+            padding: 40px 25px;
+            text-align: center;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+        }
+
+        .logo-area {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .logo-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 4px solid var(--accent-cyan);
+            padding: 5px;
+            box-shadow: 0 0 20px rgba(12, 233, 189, 0.3);
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin: 10px 0 5px;
+            letter-spacing: 2px;
+            color: var(--accent-cyan);
+        }
+
+        .tagline {
+            font-size: 14px;
+            color: #8899a6;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .btn-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 25px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .btn:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Brand Colors */
+        .whatsapp { background-color: var(--whatsapp-green); }
+        .facebook { background-color: var(--facebook-blue); } /* Added Facebook Style */
+        .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .tiktok { background-color: var(--tiktok-black); border-color: #FE2C55; }
+        .location { background-color: #ffffff; color: #000; }
+
+        .btn i { font-size: 22px; width: 30px; }
+        .btn span { flex-grow: 1; text-align: center; font-size: 17px; }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 11px;
+            opacity: 0.5;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="logo-area">
+            <img src="logo.jpg" alt="Glasar Sport" class="logo-img">
+        </div>
+
+        <h1>GLASAR SPORT</h1>
+        <p class="tagline">اكتشف أفضل الماركات الرياضية هنا</p>
+
+        <div class="btn-list">
+            <a href="https://wa.me/9647708557373" class="btn whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span>واتساب | WHATSAPP</span>
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=61587482732892" class="btn facebook" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+                <span>فيسبوك | FACEBOOK</span>
+            </a>
+
+            <a href="https://www.instagram.com/glasar_sport_kirkuk?igsh=MTZsdWdsNG41aXB3bw==" class="btn instagram" target="_blank">
+                <i class="fab fa-instagram"></i>
+                <span>انستقرام | INSTAGRAM</span>
+            </a>
+
+            <a href="https://www.tiktok.com/@glasar.sport?_r=1&_t=ZS-94BeOo6iSvJ" class="btn tiktok" target="_blank">
+                <i class="fab fa-tiktok"></i>
+                <span>تيك توك | TIKTOK</span>
+            </a>
+
+            <a href="https://maps.app.goo.gl/yhxQiv9MSaYGvRWr9" class="btn location" target="_blank">
+                <i class="fas fa-location-dot"></i>
+                <span>موقعنا | OUR LOCATION</span>
+            </a>
+        </div>
+
+        <div class="footer">
+            POWERED BY SUNFLOWER WEB | 2026
+        </div>
+    </div>
+
+</body>
+</html>
